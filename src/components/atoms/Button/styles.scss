@@ -1,0 +1,24 @@
+@import '../../../assets/mixin.scss';
+
+.buttonWrap{
+    @include shadowBox;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: blue;
+    div{
+        width: 50px;
+        position: absolute;
+    }
+    // .first{
+    //     border-bottom: solid black 2px;
+    //     top: 0;
+    // }
+    // .second{
+    //     border-bottom: solid black 2px;
+    //     bottom: 0;
+    //     transform: rotate(90deg);
+    // }
+    
+}
