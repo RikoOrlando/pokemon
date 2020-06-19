@@ -2,8 +2,10 @@
 
 .navbarContainer{
     @include flexCenter;
-    // background-color: blue;
     height: 70px;
     justify-content: space-between;
-    padding: 0 250px; 
+    padding: 0 350px; 
+    @include small {
+        padding: 1px 50px
+    }
 }

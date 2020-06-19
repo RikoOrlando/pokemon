@@ -1,17 +1,17 @@
-import React, {useState} from 'react';
-import {Avatar, H3, Button} from '../../atoms'
+import React from 'react';
+import {Avatar, H3} from '../../atoms'
 import './styles.scss'
 
 const Card = props => {
   const clicked = 'unClick'
-  const {handleClick} = props
+  const {handleClick, data} = props
   return (
     <div className={`detail ${clicked}`}>
-      <div className="cardContainer" onClick={handleClick}>
-        <Avatar urlImage={'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png'} classname="CardImage"/>
+      <div className="cardContainer" onClick={() => handleClick(data.id)}>
+        <Avatar urlImage={data.imageUrl} classname="CardImage"/>
         <div className="cardInformationWrapper">
-          <H3>Dhito</H3>
-          <p>Type</p>
+          <H3 classname="name">{data.name}</H3>
+          <p>#{data.id}</p>
         </div>
       </div>
     </div>

@@ -1,0 +1,15 @@
+@import '../../assets/mixin.scss';
+
+.detailContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    .detailWraper{
+        width: 700px;
+        @include small {
+            width: 100%;
+            padding: 10px;
+        }
+    }
+}

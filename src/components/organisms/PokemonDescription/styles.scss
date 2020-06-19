@@ -1,0 +1,17 @@
+.descriptionContainer{
+    .infoWrapper{
+        display: flex;
+        .nameWrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            div{
+                margin: 10px 0;
+            }
+        }
+    }
+    .descript{
+        opacity: 0.4;
+        text-align: justify;
+    }
+}

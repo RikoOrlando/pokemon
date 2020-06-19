@@ -1,24 +1,22 @@
 import React from 'react';
 import './styles.scss'
 import {Card} from '../../molecules'
-import history from '../../../history'
+import {useSelector, useDispatch} from 'react-redux'
+import {fetchDetailPokemon} from '../../../store/actions/action'
+import {useHistory} from 'react-router-dom'
 
 const ListPokemon = props => {
-  const handleClick = () => {
-    history.push('/detail')
+  const {listPokemon} = useSelector(state => state)
+  const dispatch = useDispatch()
+  const history = useHistory()
+  const handleClick = (id) => {
+    dispatch(fetchDetailPokemon(id, history))
   }
   return (
     <div className="listPokemonContainer">
-      <Card handleClick={handleClick}/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
+      {
+        listPokemon.map(el => <Card data={el} key={el.id} handleClick={handleClick}/>)
+      }
     </div>
   );
 };

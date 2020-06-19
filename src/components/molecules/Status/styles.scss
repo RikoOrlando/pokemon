@@ -1,0 +1,21 @@
+@import '../../../assets/mixin.scss';
+
+.statusContainer{
+    @include shadowBox;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background: gray;
+    flex-direction: column;
+    border-radius: 10px;
+    .statusImage{
+        width: 50px;
+        height: 50px;
+    }
+    p{
+        margin: 0;
+        margin-top: 10px;
+    }
+}

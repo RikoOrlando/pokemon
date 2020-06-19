@@ -1,0 +1,31 @@
+.pokemonType{
+    width: 100px;
+    padding: 5px 3px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.grass{
+    background-color: green;
+}
+.poison{
+    background-color: purple;
+}
+.fire{
+    background-color: red;
+}
+.flying{
+    background-color: blue;
+}
+.bug{
+    background-color: brown;
+}
+.defaultColor{
+    background-color: gray;
+}
+
+.electric{
+    background-color: rgb(207, 207, 44);
+}
