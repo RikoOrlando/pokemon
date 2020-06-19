@@ -13,8 +13,8 @@ function App() {
         <Provider store={store}>
             <Router history={history}>
               <Switch>
-                <Route exact path={'/detail'} component={Detail} />
                 <Route exact path={'/'} component={Home} />
+                <Route exact path={'/detail'} component={Detail} />
               </Switch>
             </Router>
         </Provider>

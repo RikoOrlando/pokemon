@@ -1,8 +1,10 @@
+@import '../../../assets/variables.scss';
+
 .closedContainer{
     cursor: pointer;
     img{
-        width: 20px;
-        height: 20px;
+        width: $px20;
+        height: $px20;
         border: 1px solid black;
         border-radius: 50%;
         padding: 3px;

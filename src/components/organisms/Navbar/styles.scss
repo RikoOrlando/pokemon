@@ -1,11 +1,13 @@
-@import '../../../assets/mixin.scss';
+@import '../../../assets/mixin.scss', '../../../assets/variables.scss';
 
 .navbarContainer{
     @include flexCenter;
     height: 70px;
     justify-content: space-between;
-    padding: 0 350px; 
+    padding: 0 350px;
+    opacity: 1;
+    transition: opacity 0.5; 
     @include small {
-        padding: 1px 50px
+        padding: 1px $px20
     }
 }

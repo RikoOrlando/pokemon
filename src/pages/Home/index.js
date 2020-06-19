@@ -1,20 +1,16 @@
 import React from 'react';
-import {useDispatch, useSelector} from 'react-redux'
+import {useDispatch} from 'react-redux'
 import {Navbar, ListPokemon, NotFound} from '../../components'
-import {fetchRandomdata, closedNotFound} from '../../store/actions/action'
+import {fetchRandomdata} from '../../store/actions/action'
 import './styles.scss'
 
 function Home() {
-  const {notFound} = useSelector(state => state)
+  // const {notFound} = useSelector(state => state)
   const dispatch = useDispatch()
   dispatch(fetchRandomdata())
   return (
     <>
-    {/* {
-      notFound && (
-        <NotFound onclick={() => dispatch(closedNotFound())}/>
-      )
-    } */}
+      <NotFound/>
       <div className="Home">
         <Navbar/>
         <div className="mainContainer">

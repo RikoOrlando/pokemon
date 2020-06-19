@@ -1,13 +1,17 @@
 import React from 'react';
 import {Avatar, H3, PokemonType} from '../../atoms'
+import {useSpring, animated} from 'react-spring'
 import './styles.scss'
 
 const PokemonDescription = props => {
   const {data} = props
+  const anim = useSpring({opacity: 1, from:{opacity: 0}, config: {delay: 1000, duration: 1000}})
   return (
     <div className="descriptionContainer">
         <div className="infoWrapper">
+          <animated.div style={anim}>
             <Avatar urlImage={data.imageUrl} classname="CardImage"/>
+          </animated.div>
             <div className="nameWrapper">
                 <p>#{data.id}</p>
                 <H3 classname="noMargin">{data.name}</H3>

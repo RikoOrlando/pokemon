@@ -4,7 +4,7 @@ import {useSpring, animated} from 'react-spring'
 
 const Bar = props => {
   const {name, value} = props
-  const anim = useSpring({width: `${value}%`, from: {width: '0%'}})
+  const anim = useSpring({width: `${value}%`, from: {width: '0%'}, config: { delay: 300}})
   return (
     <div className="barContainer">
         <h3 className="titleBar">{name}</h3>
