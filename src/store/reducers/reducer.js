@@ -1,6 +1,7 @@
 const initialState = {
     listPokemon: [],
-    detailPokemon: {}
+    detailPokemon: {},
+    notFound: false
 }
 
 export default function general (state = initialState, action) {
@@ -9,6 +10,8 @@ export default function general (state = initialState, action) {
             return {...state, listPokemon: action.payload}
         case 'SET_DETAIL_POKEMON':
                 return {...state, detailPokemon: action.payload}
+        case 'SET_NOT_FOUND':
+                return {...state, notFound: action.payload}
         default:
             return state
     }

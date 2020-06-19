@@ -5,4 +5,5 @@ import Button from './Button'
 import PokemonType from './Type'
 import InputForm from './InputForm'
 import Closed from './Closed'
-export {Avatar, H3, Button, PokemonType, InputForm, Closed}
+import NotFound from './NotFound'
+export {Avatar, H3, Button, PokemonType, InputForm, Closed, NotFound}

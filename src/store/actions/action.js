@@ -14,7 +14,6 @@ const formatedData = (payload) => {
 }
 
 const formatDetail = (payload) => {
-    console.log(payload)
     let data = {
         name: payload.name,
         id: payload.id,
@@ -52,5 +51,12 @@ export const findPokemon = (name, history) => (dispatch) => {
         dispatch({type: 'SET_DETAIL_POKEMON', payload: formated})
         history.push('/detail')
     })
+    .catch(() => {
+        dispatch({type: 'SET_NOT_FOUND', payload: true})
+    })
+}
+
+export const closedNotFound = () => (dispatch) => {
+    dispatch({type: 'SET_NOT_FOUND', payload: false})
 }
 
