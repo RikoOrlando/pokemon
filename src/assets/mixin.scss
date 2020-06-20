@@ -7,6 +7,10 @@
   box-shadow: 1px 0px 34px -20px rgba(0,0,0,0.75);
   }
 
+@mixin shadowBoxBlur {
+    box-shadow: 1px 0px 34px -27px rgba(0,0,0,0.75);
+    }
+
 @mixin small {
   @media only screen and (max-width: 928px) {
     @content;

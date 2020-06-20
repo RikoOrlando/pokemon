@@ -5,7 +5,7 @@ import './styles.scss'
 
 const PokemonDescription = props => {
   const {data} = props
-  const anim = useSpring({opacity: 1, from:{opacity: 0}, config: {delay: 1000, duration: 1000}})
+  const anim = useSpring({opacity: 1, from:{opacity: 0}, config: { duration: 1000}, delay: 250})
   return (
     <div className="descriptionContainer">
         <div className="infoWrapper">

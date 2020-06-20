@@ -3,6 +3,7 @@
     @include shadowBox;
     background-color: white;
     border-radius: $px20;
+    transition: transform 0.5s ease;
     &.click{
         height: 100%;
         position: absolute;
@@ -14,6 +15,10 @@
     &.unClick{
         width: 250px;
         position: relative;
+    }
+    &:hover{
+        transform: scale(1.05);
+        @include shadowBoxBlur;
     }
 }
 .cardContainer{

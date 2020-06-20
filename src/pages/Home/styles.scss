@@ -2,7 +2,9 @@
 .mainContainer{
     padding: 0 300px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     @include small {
         padding: 0 30px;
     }

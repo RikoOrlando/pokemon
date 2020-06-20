@@ -1,0 +1,38 @@
+@import '../../../assets/variables.scss', '../../../assets/mixin.scss';
+
+.arrowButtonContainer{
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    transition: all ease 0.5s;
+    @include shadowBox;
+    .one{
+        width: 100%;
+        height: 100%;
+        transform: rotate(45deg);
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+    }
+    .two{
+        width: 20px;
+        height: 2px;
+        background-color:black;
+        margin-top: -7px;
+        margin-left: -7px;
+        transition: all ease 0.5s;
+    }
+    &:hover{
+        transform: scale(1.2);
+    }
+    &:active{
+        transform: scale(0.9);
+    }
+    &.reverse{
+        transform: rotate(180deg);
+        margin-top: 3px;
+        &:hover{
+            transform: scale(1.2) rotate(180deg);
+            // transform: rotate(180deg);
+        }
+    }
+}

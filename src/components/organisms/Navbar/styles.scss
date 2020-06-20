@@ -2,11 +2,14 @@
 
 .navbarContainer{
     @include flexCenter;
+    @include shadowBox;
+    // position: fixed;
     height: 70px;
     justify-content: space-between;
     padding: 0 350px;
     opacity: 1;
-    transition: opacity 0.5; 
+    transition: opacity 0.5;
+    margin-bottom: 10px; 
     @include small {
         padding: 1px $px20
     }
