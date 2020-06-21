@@ -7,6 +7,18 @@
     justify-content: center;
     .detailWraper{
         width: 700px;
+        @include shadowBoxBlur;
+        padding: 15px;
+        .btnFloat{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding-top: 20px;
+            padding-right: 20px;
+            // background-color: black;
+            // width: 100%;
+            // justify-self: right;
+        }
         @include small {
             width: 100%;
             padding: 10px;

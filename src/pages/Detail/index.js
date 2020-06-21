@@ -13,7 +13,9 @@ function Detail() {
   return (
     <div className="detailContainer">
       <div className="detailWraper">
-        <Closed classname='floatRightTop' onclick={onclick}/>
+        <div className='btnFloat'>
+          <Closed onclick={onclick}/>
+        </div>
         <PokemonDescription data={detailPokemon}/>
         <PokemonStatus data={detailPokemon.baseStatus}/>
         <PokemonStatistic data={detailPokemon.statistic}/>
