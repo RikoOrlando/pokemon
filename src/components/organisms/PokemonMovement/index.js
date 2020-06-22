@@ -9,7 +9,7 @@ const PokemonMovement = props => {
         <h1>Movement</h1>
         <div className="movementList">
             {
-              data.map(el => <PokemonType>{el}</PokemonType>)
+              data.map((el, indx) => {return <PokemonType key={indx}>{el}</PokemonType>})
             }
         </div>
     </div>

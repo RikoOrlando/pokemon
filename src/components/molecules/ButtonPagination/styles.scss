@@ -1,3 +1,5 @@
+@import '../../../assets/mixin.scss';
+
 .buttonPaginationContainer{
     display: flex;
     flex-direction: row;
@@ -6,4 +8,6 @@
     align-items: center;
     justify-content: space-evenly;
     width: 100px;
+    @include shadowBox;
+    border-radius: 7px;
 }

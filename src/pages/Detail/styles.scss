@@ -8,7 +8,7 @@
     .detailWraper{
         width: 700px;
         @include shadowBoxBlur;
-        padding: 15px;
+        padding: 30px;
         .btnFloat{
             display: flex;
             justify-content: flex-end;

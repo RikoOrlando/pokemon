@@ -8,7 +8,7 @@ const PokemonStatistic = props => {
     <div className="statisticContainer">
         <h1>Statistics</h1>
         {
-          data.map((el,i) => {return <Bar name={el.name} value={el.value} index={i}/>})
+          data.map((el,i) => {return <Bar name={el.name} value={el.value} key={i} index={i}/>})
         }
     </div>
   );

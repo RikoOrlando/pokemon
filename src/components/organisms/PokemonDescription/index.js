@@ -17,7 +17,7 @@ const PokemonDescription = props => {
                 <H3 classname="noMargin">{data.name}</H3>
                 <div>
                   {
-                    data.tipe.map(el => <PokemonType>{el}</PokemonType>)
+                    data.tipe.map((el, indx) => {return <PokemonType key={indx}>{el}</PokemonType>})
                   }
                 </div>
             </div>

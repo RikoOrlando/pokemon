@@ -7,7 +7,7 @@ const PokemonStatus = props => {
   return (
     <div className="pokemonStatusContainer">
       {
-        data.map(el => <Status data={el} flag={Object.keys(el)}/>)
+        data.map((el, indx) => {return <Status data={el} key={indx} flag={Object.keys(el)}/>})
       }
     </div>
   );
