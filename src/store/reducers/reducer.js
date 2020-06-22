@@ -2,7 +2,7 @@ import Cookies from 'js-cookie'
 
 const initialState = {
     listPokemon: [],
-    detailPokemon: JSON.parse(Cookies.get('detail')),
+    detailPokemon: {},
     notFound: false,
     pagination: {page: 1, limit: 20, offSet: 0}
 }
